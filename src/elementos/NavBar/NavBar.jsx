@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className="container-fluid">
           <strong>
            
-              GYM PRO ONE-LINE
+             Entrenador personal Luca Vera
             
           </strong>
           <div
@@ -18,24 +18,20 @@ const NavBar = () => {
             <ul className="navbar-nav text-center">
               <li className="nav-item">
              
-                  Proteinas
+                 Principiantes
               
               </li>
               <li className="nav-item">
                 
-                  Creatinas
+                  Intermedios
              
               </li>
               <li className="nav-item">
               
-                  Quemadores
+                  Avanzados
              
               </li>
-              <li className="nav-item">
-                
-                  Pre-Entrenos
-               
-                 </li>
+             
             </ul>
           </div>
         </div>
