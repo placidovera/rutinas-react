@@ -6,7 +6,7 @@ const ItemDetailContainer = () => {
   const [rutina, setRutina] = useState(null)
 
   useEffect(() => {
-    getRutinaElegida(2)
+    getRutinaElegida(5)
       .then(res => setRutina(res))
       .catch(error => console.log(error))
   }, [])
