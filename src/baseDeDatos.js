@@ -1,42 +1,26 @@
 import Item from "./elementos/Item/Item"
 
 export const misRutinas = [
+  // PRINCIPIANTES - Full Body
   {
     id: 1,
-    nombre: "Rutinas Principiantes",
+    nombre: "Principiantes Full Body",
     objetivo: "Hipertrofia",
     metodo: "Levantamiento",
+    idCategoria: "principiantes",
     semana: [
       {
         dia: "Lunes",
         bloques: [
           {
-            musculos: ["Pecho"],
+            musculos: ["Pecho", "Espalda", "Piernas", "Hombros", "Biceps", "Triceps"],
             ejercicios: [
-              { nombre: "Press en banco plano c/barra", series: "10-10-10-10", carga: "70%" },
-              { nombre: "Press inclinado c/mancuernas", series: "10-10-10", carga: "70%" },
-              { nombre: "Aperturas c/maquina(Peck Deck)", series: "12-10-8", carga: "70%" }
-            ]
-          },
-          {
-            musculos: ["Triceps"],
-            ejercicios: [
-              { nombre: "Press a la nuca c/mancuernas", series: "10-10-10-10", carga: "70%" },
-              { nombre: "Patada de burro c/mancuernas", series: "10-10-10", carga: "70%" },
-              { nombre: "Extenciones en polea con barra", series: "12-10-8", carga: "70%" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Martes",
-        bloques: [
-          {
-            musculos: ["Piernas", "Abdomen"],
-            ejercicios: [
-              { nombre: "Sentadillas", series: "10-10-10", carga: "60%" },
-              { nombre: "Prensa 45°", series: "12-10-8", carga: "60%" },
-              { nombre: "Elevaciones de piernas", series: "15-15-15", carga: "Peso corporal" }
+              { nombre: "Press en banco plano c/barra", series: "10-10-10", carga: "60%" },
+              { nombre: "Press inclinado c/mancuernas", series: "10-10-10", carga: "60%" },
+              { nombre: "Sentadillas", series: "10-10-10", carga: "50%" },
+              { nombre: "Remo c/maquina 45°", series: "10-10-10", carga: "50%" },
+              { nombre: "Curl alternado c/mancuernas", series: "10-10-10", carga: "50%" },
+              { nombre: "Press militar", series: "10-10-10", carga: "50%" }
             ]
           }
         ]
@@ -45,11 +29,154 @@ export const misRutinas = [
         dia: "Miércoles",
         bloques: [
           {
-            musculos: ["Espalda", "Biceps"],
+            musculos: ["Pecho", "Espalda", "Piernas", "Hombros", "Biceps", "Triceps"],
             ejercicios: [
-              { nombre: "Dominadas", series: "10-10-8", carga: "Peso corporal" },
-              { nombre: "Remo con barra", series: "10-10-10", carga: "60%" },
-              { nombre: "Curl con mancuerna", series: "12-10-8", carga: "50%" }
+              { nombre: "Press en banco plano c/barra", series: "10-10-10", carga: "60%" },
+              { nombre: "Press inclinado c/mancuernas", series: "10-10-10", carga: "60%" },
+              { nombre: "Sentadillas", series: "10-10-10", carga: "50%" },
+              { nombre: "Remo c/maquina 45°", series: "10-10-10", carga: "50%" },
+              { nombre: "Curl alternado c/mancuernas", series: "10-10-10", carga: "50%" },
+              { nombre: "Press militar", series: "10-10-10", carga: "50%" }
+            ]
+          }
+        ]
+      },
+      {
+        dia: "Viernes",
+        bloques: [
+          {
+            musculos: ["Full Body"],
+            ejercicios: [
+              { nombre: "Press en banco plano c/barra", series: "10-10-10", carga: "60%" },
+              { nombre: "Press inclinado c/mancuernas", series: "10-10-10", carga: "60%" },
+              { nombre: "Sentadillas", series: "10-10-10", carga: "50%" },
+              { nombre: "Remo c/maquina 45°", series: "10-10-10", carga: "50%" },
+              { nombre: "Curl alternado c/mancuernas", series: "10-10-10", carga: "50%" },
+              { nombre: "Press militar", series: "10-10-10", carga: "50%" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // PRINCIPIANTES - Aeróbico
+  {
+    id: 2,
+    nombre: "Principiantes Aeróbico",
+    objetivo: "Resistencia",
+    metodo: "Aeróbico",
+    idCategoria: "principiantes",
+    semana: [
+      {
+        dia: "Lunes",
+        bloques: [
+          {
+            musculos: ["Cardio"],
+            ejercicios: [
+              { nombre: "Correr en cinta", series: "15 min", carga: "Ritmo medio" },
+              { nombre: "Jumping jacks", series: "3x30", carga: "Peso corporal" }
+            ]
+          }
+        ]
+      },
+      {
+        dia: "Miércoles",
+        bloques: [
+          {
+            musculos: ["Cardio"],
+            ejercicios: [
+              { nombre: "Burpees", series: "3x15", carga: "Peso corporal" },
+              { nombre: "Mountain climbers", series: "3x20", carga: "Peso corporal" }
+            ]
+          }
+        ]
+      },
+      {
+        dia: "Viernes",
+        bloques: [
+          {
+            musculos: ["Cardio"],
+            ejercicios: [
+              { nombre: "Circuito HIIT (jumping jacks, burpees, mountain climbers)", series: "3 rondas", carga: "Intensidad media" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // INTERMEDIOS - 
+  {
+    id: 3,
+    nombre: "Rutinas Intermedios",
+    objetivo: "Hipertrofia",
+    metodo: "Levantamiento",
+    idCategoria: "intermedios",
+    semana: [
+      {
+        dia: "Lunes",
+        bloques: [
+          {
+            musculos: ["Pecho"],
+            ejercicios: [
+              { nombre: "Press en banco plano c/barra", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Press inclinado c/mancuernas", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Aperturas c/maquina(Peck Deck)", series: "12-10-10-8", carga: "85%" }
+            ]
+          },
+          {
+            musculos: ["Triceps"],
+            ejercicios: [
+              { nombre: "Press a la nuca c/mancuernas", series: "10-10-10-10", carga: "75%" },
+              { nombre: "Patada de burro c/mancuernas", series: "10-10-10-10", carga: "77%" },
+              { nombre: "Extensiones en polea con barra", series: "12-10-10-8", carga: "85%" }
+            ]
+          }
+        ]
+      },
+      {
+        dia: "Martes",
+        bloques: [
+          {
+            musculos: ["Abdomen"],
+            ejercicios: [
+              { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
+              { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
+            ]
+          },
+          {
+            musculos: ["Piernas"],
+            ejercicios: [
+              { nombre: "Sentadilla Hack", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Prensa 45°", series: "12-10-10-8", carga: "85%" },
+              { nombre: "Sentadillas", series: "10-10-10-10", carga: "75%" },
+              { nombre: "Extensiones de piernas c/maquina", series: "12-10-10-8", carga: "85%" },
+              { nombre: "Flexiones de piernas c/camilla", series: "12-10-10-8", carga: "85%" },
+              { nombre: "Gemelos c/maquina", series: "15-15-15-15", carga: "85%" },
+              { nombre: "Gemelos parado c/mancuernas", series: "15-15-15-15", carga: "85%" }
+            ]
+          }
+        ]
+      },
+      {
+        dia: "Miércoles",
+        bloques: [
+          {
+            musculos: ["Espalda"],
+            ejercicios: [
+              { nombre: "Jalon al frente a/triangulo dorsalera", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Remo c/maquina a/abierto", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Remo c/maquina 45°", series: "10-10-10-10", carga: "85%" }
+            ]
+          },
+          {
+            musculos: ["Biceps"],
+            ejercicios: [
+              { nombre: "Curl alternado c/mancuernas", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Scott curl con barra", series: "10-10-10-10", carga: "85%" }
             ]
           }
         ]
@@ -58,11 +185,20 @@ export const misRutinas = [
         dia: "Jueves",
         bloques: [
           {
-            musculos: ["Hombros", "Abdomen"],
+            musculos: ["Hombros"],
             ejercicios: [
-              { nombre: "Press militar", series: "10-10-10", carga: "50%" },
-              { nombre: "Elevaciones laterales", series: "12-12-10", carga: "40%" },
-              { nombre: "Crunches", series: "15-15-15", carga: "Peso corporal" }
+              { nombre: "Press militar", series: "10-10-10-10", carga: "50%" },
+              { nombre: "Elevaciones laterales", series: "12-12-10-10", carga: "70%" },
+              { nombre: "Elevaciones posteriores c/mancuernas", series: "12-12-10-10", carga: "60%" }
+            ]
+          },
+          {
+            musculos: ["Abdomen"],
+            ejercicios: [
+              { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
+              { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
             ]
           }
         ]
@@ -82,12 +218,13 @@ export const misRutinas = [
       }
     ]
   },
-
+  // INTERMEDIOS - 
   {
-    id: 2,
-    nombre: "Rutinas Principiantes",
-    objetivo: "Fuerza",
-    metodo: "Levantamiento",
+    id: 3,
+    nombre: "Rutinas Intermedios",
+    objetivo: "Hipertrofia",
+    metodo: "Super series",
+    idCategoria: "intermedios",
     semana: [
       {
         dia: "Lunes",
@@ -95,15 +232,20 @@ export const misRutinas = [
           {
             musculos: ["Pecho"],
             ejercicios: [
-              { nombre: "Press en banco plano c/barra", series: "5-5-5-5", carga: "80%" },
-              { nombre: "Press inclinado c/mancuernas", series: "5-5-5", carga: "80%" }
+              { nombre: "Press en banco plano c/maquina(s/serie↓)", series: "10-10-10-10", carga: "75%" },
+              { nombre: "Aperturas c/mancuernas", series: "-x-", carga: "-x-%" },
+              { nombre: "Press en banco iclinado c/mancuernas(s/serie↓)", series: "10-10-10-10", carga: "75%" },
+              { nombre: "Aperturas en banco iclinado c/mancuernas", series: "-x-", carga: "-x-%" },
+              { nombre: "Flexiones de pecho", series: "-x-", carga: "Peso corporal" }
             ]
           },
           {
             musculos: ["Triceps"],
             ejercicios: [
-              { nombre: "Fondos en paralelas", series: "5-5-5", carga: "Peso corporal" },
-              { nombre: "Extenciones en polea", series: "5-5-5", carga: "60%" }
+              { nombre: "Extensiones en polea con barra a la nuca(s/serie↓)", series: "10-10-10-10", carga: "75%" },
+              { nombre: "Extensiones con cuerda", series: "-x-", carga: "-x-%" },
+              { nombre: "Press frances en banco plano c/barra(s/serie↓)", series: "10-10-10-10", carga: "75%" },
+              { nombre: "Extensiones a la nuca con mancuernas", series: "-x-", carga: "-x-%" }
             ]
           }
         ]
@@ -111,13 +253,29 @@ export const misRutinas = [
       {
         dia: "Martes",
         bloques: [
-          {
-            musculos: ["Piernas"],
-            ejercicios: [
-              { nombre: "Sentadillas pesadas", series: "5-5-5", carga: "80%" },
-              { nombre: "Peso muerto", series: "5-5-5", carga: "85%" }
-            ]
-          }
+        {
+        musculos: ["Abdomen"],
+        ejercicios: [
+          { nombre: "Crunch bicicleta", series: "30-30-30", carga: "Peso corporal" },
+          { nombre: "Elevaciones de piernas colgado", series: "15-15-15", carga: "Peso corporal" },
+          { nombre: "Plancha lateral", series: "1 min por lado", carga: "Peso corporal" },
+          { nombre: "Mountain climbers", series: "3x30 seg", carga: "Peso corporal" }
+        ]
+      },
+        {
+  musculos: ["Piernas"],
+  ejercicios: [
+    { nombre: "Squat Calf Machine(s/serie↓)", series: "10-10-10-10", carga: "65%" },
+    { nombre: "Banco para sentadillas",  series: "-x-", carga: "-x-%" },
+    { nombre: "Peso muerto con barra(s/serie↓)", series: "10-10-10-10", carga: "65%" },
+    { nombre: "Zancadas con mancuernas",  series: "-x-", carga: "-x-%" },
+    { nombre: "Extensiones de piernas c/maquina", series: "15-15-15-15", carga: "65%" },
+    { nombre: "Flexiones de piernas c/camilla", series: "15-15-15-15", carga: "65%" },
+    { nombre: "Gemelos c/maquina", series: "15-15-15-15", carga: "85%" },
+    { nombre: "Elevación de talones de pie c/mancuernas", series: "15-15-15-15", carga: "75%" }
+  ]
+}
+
         ]
       },
       {
@@ -126,14 +284,16 @@ export const misRutinas = [
           {
             musculos: ["Espalda"],
             ejercicios: [
-              { nombre: "Dominadas lastradas", series: "5-5-5", carga: "Peso corporal + lastre" },
-              { nombre: "Remo con barra", series: "5-5-5", carga: "75%" }
+              { nombre: "Jalon al frente a/triangulo dorsalera", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Remo c/maquina a/abierto", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Remo c/maquina 45°", series: "10-10-10-10", carga: "85%" }
             ]
           },
           {
             musculos: ["Biceps"],
             ejercicios: [
-              { nombre: "Curl con barra", series: "5-5-5", carga: "60%" }
+              { nombre: "Curl alternado c/mancuernas", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Scott curl con barra", series: "10-10-10-10", carga: "85%" }
             ]
           }
         ]
@@ -144,8 +304,18 @@ export const misRutinas = [
           {
             musculos: ["Hombros"],
             ejercicios: [
-              { nombre: "Press militar", series: "5-5-5", carga: "65%" },
-              { nombre: "Elevaciones frontales", series: "6-6-6", carga: "50%" }
+              { nombre: "Press militar", series: "10-10-10-10", carga: "50%" },
+              { nombre: "Elevaciones laterales", series: "12-12-10-10", carga: "70%" },
+              { nombre: "Elevaciones posteriores c/mancuernas", series: "12-12-10-10", carga: "60%" }
+            ]
+          },
+          {
+            musculos: ["Abdomen"],
+            ejercicios: [
+              { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
+              { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
             ]
           }
         ]
@@ -154,156 +324,23 @@ export const misRutinas = [
         dia: "Viernes",
         bloques: [
           {
-            musculos: ["Full Body"],
+            musculos: ["Elige tu músculo"],
             ejercicios: [
-              { nombre: "Peso muerto", series: "3-3-3", carga: "85%" },
-              { nombre: "Press banca", series: "3-3-3", carga: "85%" },
-              { nombre: "Sentadillas", series: "3-3-3", carga: "85%" }
+              { nombre: "Ejercicio opcional 1", series: "10-10-10", carga: "50%" },
+              { nombre: "Ejercicio opcional 2", series: "12-10-8", carga: "50%" },
+              { nombre: "Ejercicio opcional 3", series: "15-12-10", carga: "50%" }
             ]
           }
         ]
       }
     ]
   },
-
   {
-    id: 3,
-    nombre: "Rutinas Principiantes",
-    objetivo: "Resistencia",
-    metodo: "Aeróbico",
-    semana: [
-      {
-        dia: "Lunes",
-        bloques: [
-          {
-            musculos: ["Pecho", "Triceps"],
-            ejercicios: [
-              { nombre: "Push-ups", series: "20-20-15", carga: "Peso corporal" },
-              { nombre: "Fondos en paralelas", series: "15-15-15", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Martes",
-        bloques: [
-          {
-            musculos: ["Piernas"],
-            ejercicios: [
-              { nombre: "Sentadillas con salto", series: "20-20-20", carga: "Peso corporal" },
-              { nombre: "Estocadas caminando", series: "20-20", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Miércoles",
-        bloques: [
-          {
-            musculos: ["Cardio"],
-            ejercicios: [
-              { nombre: "Correr en cinta", series: "15 min", carga: "Ritmo medio" },
-              { nombre: "Burpees", series: "15-15-15", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Jueves",
-        bloques: [
-          {
-            musculos: ["Hombros", "Core"],
-            ejercicios: [
-              { nombre: "Plancha", series: "1 min - 1 min - 1 min", carga: "Peso corporal" },
-              { nombre: "Elevaciones laterales rápidas", series: "20-20-20", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Viernes",
-        bloques: [
-          {
-            musculos: ["Full Body"],
-            ejercicios: [
-              { nombre: "Circuito HIIT (jumping jacks, burpees, mountain climbers)", series: "3 rondas", carga: "Intensidad alta" }
-            ]
-          }
-        ]
-      }
-    ]
-  }, {
     id: 4,
-    nombre: "Rutinas Principiantes",
-    objetivo: "Resistencia",
-    metodo: "Aeróbico",
-    semana: [
-      {
-        dia: "Lunes",
-        bloques: [
-          {
-            musculos: ["Pecho", "Triceps"],
-            ejercicios: [
-              { nombre: "Push-ups", series: "20-20-15", carga: "Peso corporal" },
-              { nombre: "Fondos en paralelas", series: "15-15-15", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Martes",
-        bloques: [
-          {
-            musculos: ["Piernas"],
-            ejercicios: [
-              { nombre: "Sentadillas con salto", series: "20-20-20", carga: "Peso corporal" },
-              { nombre: "Estocadas caminando", series: "20-20", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Miércoles",
-        bloques: [
-          {
-            musculos: ["Cardio"],
-            ejercicios: [
-              { nombre: "Correr en cinta", series: "15 min", carga: "Ritmo medio" },
-              { nombre: "Burpees", series: "15-15-15", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Jueves",
-        bloques: [
-          {
-            musculos: ["Hombros", "Core"],
-            ejercicios: [
-              { nombre: "Plancha", series: "1 min - 1 min - 1 min", carga: "Peso corporal" },
-              { nombre: "Elevaciones laterales rápidas", series: "20-20-20", carga: "Peso corporal" }
-            ]
-          }
-        ]
-      },
-      {
-        dia: "Viernes",
-        bloques: [
-          {
-            musculos: ["Full Body"],
-            ejercicios: [
-              { nombre: "Circuito HIIT (jumping jacks, burpees, mountain climbers)", series: "3 rondas", carga: "Intensidad alta" }
-            ]
-          }
-        ]
-      }
-    ]
-  },
- {
-    id: 5,
-    nombre: "Rutinas Itermedios",
+    nombre: "Rutinas Avanzados",
     objetivo: "Hipertrofia",
     metodo: "Levantamiento",
+    idCategoria: "avanzados",
     semana: [
       {
         dia: "Lunes",
@@ -328,13 +365,16 @@ export const misRutinas = [
       },
       {
         dia: "Martes",
-        bloques: [{  musculos: ["Abdomen"],
+        bloques: [
+          {
+            musculos: ["Abdomen"],
             ejercicios: [
-           { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
-           { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50",carga: "Peso corporal" },
-           { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
-           { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
-            ]},
+              { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
+              { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
+            ]
+          },
           {
             musculos: ["Piernas"],
             ejercicios: [
@@ -355,17 +395,16 @@ export const misRutinas = [
           {
             musculos: ["Espalda"],
             ejercicios: [
-              { nombre: "Jalon al frente a/triangulo dorsalera",series: "10-10-10-10", carga: "85%" },
+              { nombre: "Jalon al frente a/triangulo dorsalera", series: "10-10-10-10", carga: "85%" },
               { nombre: "Remo c/maquina a/abierto", series: "10-10-10-10", carga: "85%" },
-              { nombre: "Remo c/maquina 45° ", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Remo c/maquina 45°", series: "10-10-10-10", carga: "85%" }
             ]
           },
           {
             musculos: ["Biceps"],
             ejercicios: [
-              { nombre: "Curl alternado c/mancuernas", series: "10-10-10-10",carga: "85%" },
-              { nombre: "Curl alternado c/mancuernas", series: "10-10-10-10",carga: "85%" },
-              { nombre: "Scott curl con barra w", series: "10-10-10-10",carga: "85%" },
+              { nombre: "Curl alternado c/mancuernas", series: "10-10-10-10", carga: "85%" },
+              { nombre: "Scott curl con barra", series: "10-10-10-10", carga: "85%" }
             ]
           }
         ]
@@ -381,13 +420,15 @@ export const misRutinas = [
               { nombre: "Elevaciones posteriores c/mancuernas", series: "12-12-10-10", carga: "60%" }
             ]
           },
-          { musculos: ["Abdomen"],
+          {
+            musculos: ["Abdomen"],
             ejercicios: [
-            { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
-            { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50",carga: "Peso corporal" },
-            { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
-            { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
-            ]}
+              { nombre: "Crunch abdominal clásico", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Elevación de piernas c/colchoneta", series: "50-50-50-50", carga: "Peso corporal" },
+              { nombre: "Plancha frontal", series: "2 minutos", carga: "Peso corporal" },
+              { nombre: "Oblicuos y en banco 45°", series: "50-50-50-50", carga: "Peso corporal" }
+            ]
+          }
         ]
       },
       {
@@ -404,19 +445,25 @@ export const misRutinas = [
         ]
       }
     ]
-  },
-  // ... resto igual que tenías
+  }
 ];
 
 export const getMisRutinas = () => {
   return new Promise(resolve => {
     resolve(misRutinas)
   })
-}
+};
 
 export const getRutinaElegida = (id) => {
   return new Promise(resolve => {
     const rutina = misRutinas.find(Item => Item.id == id)
     resolve(rutina)
   })
-}
+};
+
+export const getCategoria = (idCat)=>{
+  return new Promise(resolve =>{
+    const rutinaCategoria = misRutinas.filter(item => item.idCategoria === idCat)
+    resolve(rutinaCategoria)
+  })
+};

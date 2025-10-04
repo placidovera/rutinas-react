@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react"
-import { getMisRutinas } from "../../baseDeDatos"
+import { getMisRutinas ,getCategoria} from "../../baseDeDatos"
 import  ItemList  from "../ItemList/ItemList"
 import "./ItemListContainer.css"
-
+import { useParams } from "react-router-dom";
 
 const ItemlistContainer = () => {
 const [rutinas,setRutinas]= useState([])
+const {idCategoria}= useParams()
 
 useEffect(()=>{
-  getMisRutinas()
+const funcionRutinas = idCategoria ? getCategoria : getMisRutinas;
+  funcionRutinas(idCategoria)
   .then(res => setRutinas(res))
   .catch(error => console.log(error))
 
-},[])
+},[idCategoria])
 
   return (
     <div>
