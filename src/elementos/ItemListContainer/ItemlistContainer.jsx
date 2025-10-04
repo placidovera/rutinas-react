@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { getMisRutinas } from "../../baseDeDatos"
 import  ItemList  from "../ItemList/ItemList"
-import "./ItemlistContainer.css"
+import "./ItemListContainer.css"
+
 
 const ItemlistContainer = () => {
 const [rutinas,setRutinas]= useState([])
