@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
     <NavBar/>
-    {/* <ItemlistContainer/> */}
+    <ItemlistContainer/>
     <ItemDetailContainer/>
     </>
   )
