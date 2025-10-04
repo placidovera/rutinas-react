@@ -7,12 +7,20 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencias y builds
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Vite cache
+.vite
+
+# Archivos del deploy local
+.netlify
+.vercel
+
+# Editor y sistema
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos de entorno
+.env
+.env.*.local
