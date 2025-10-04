@@ -7,7 +7,6 @@ const App = () => {
   return (
     <>
     <NavBar/>
-    <ItemlistContainer/>
     <ItemDetailContainer/>
     </>
   )
